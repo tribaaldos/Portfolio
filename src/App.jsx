@@ -39,6 +39,7 @@ function App() {
         </ScrollControls>
       </Canvas>
       <Menu />
+      {/* */}
     </>
   );
 }
