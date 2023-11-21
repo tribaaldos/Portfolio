@@ -108,7 +108,7 @@ export const Experience = () => {
           <group scale={isMobile ? 0.3 : 1}>
             <Float floatIntensity={0.6}>
               <Center disableY disableZ>
-                <SectionTitle
+                <SectionTitle className="title-section"
                   size={0.8}
                   position-y={1.6}
                   position-z={-3}

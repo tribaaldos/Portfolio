@@ -223,8 +223,9 @@ a {
   top: 0;
   left: 4rem;
   right: 4rem;
-  background: #f5f3ef8a;
+  background: black;
   backdrop-filter: blur(8px);
+  
 }
 
 .menu__logo {
@@ -241,11 +242,11 @@ a {
 
 .menu__button {
   font-weight: bold;
-  color: var(--text-color);
+  color: white;
 }
 
 .menu__button:hover {
-  color: var(--primary-color);
+  color: red;
   cursor: pointer;
 }
 
@@ -326,10 +327,12 @@ a {
   }
 
   .skills {
-    display: flex;
+    display: grid;
     gap: 1rem;
     overflow-x: auto;
     width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Modificar esta línea */
+
   }
 
   .skill {
@@ -356,6 +359,11 @@ a {
   .menu {
     flex-direction: column;
     gap: 0.5rem;
+  
+  }
+  .menu__button {
+    color: white;
+
   }
 
   .loading-screen__title {

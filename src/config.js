@@ -71,7 +71,7 @@ export const config = {
         twitter: "https://instagram.com/angel.dev3d",
         instagram: "https://instagram.com/angel.dev3d",
       },
-      mail: "contact@wawasensei.dev",
+      mail: "tribaaldos@gmail.com",
     },
   };
   
