@@ -51,7 +51,7 @@ export const config = {
       },
       {
         name: "English",
-        icon: "icons/usa.png",
+        icon: "icons/spain.png",
         level: 90,
       },
     ],

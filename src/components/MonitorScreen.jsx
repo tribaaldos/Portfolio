@@ -1,6 +1,6 @@
 import { useTexture } from "@react-three/drei";
 import { useAtom } from "jotai";
-import { config } from "../../../../../Downloads/24-portfolio-final/src/config";
+import { config } from "../config";
 import { projectAtom } from "./Interface";
 
 export const MonitorScreen = ({ ...props }) => {
