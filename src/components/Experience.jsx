@@ -27,6 +27,7 @@ import { ParkBench } from "./ParkBench";
 import { Pigeon } from "./Pigeon";
 import { SectionTitle } from "./SectionTitle";
 // import { Star } from "./Star";
+import { Ball } from './Ball.jsx';
 
 const SECTIONS_DISTANCE = 10;
 
@@ -108,7 +109,8 @@ export const Experience = () => {
           <group scale={isMobile ? 0.3 : 1}>
             <Float floatIntensity={0.6}>
               <Center disableY disableZ>
-                <SectionTitle className="title-section"
+                <SectionTitle
+                  className="title-section"
                   size={0.8}
                   position-y={1.6}
                   position-z={-3}
@@ -162,15 +164,17 @@ export const Experience = () => {
               rotation-y={-Math.PI}
             />
           </group>
-          <mesh position-y={2} position-z={-4} position-x={2}>
-            <sphereGeometry args={[1, 64, 64]} />
+          <mesh position-y={2} position-z={-4} position-x={1}>
+            {/* <sphereGeometry args={[1, 64, 64]} />
             <MeshDistortMaterial
               opacity={0.8}
               transparent
               distort={1}
               speed={5}
               color="yellow"
-            />
+            /> */}
+
+            <Ball scale={0.4}/>
           </mesh>
         </motion.group>
         {/* PROJECTS */}

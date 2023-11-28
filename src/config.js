@@ -27,14 +27,21 @@ export const config = {
         level: 50,
       },
       {
-        name: "Python",
-        icon: "icons/python.jpeg",
-        level: 30,
-      },
-      {
         name: "MongoDb",
         icon: "icons/mongodb.jpeg",
         level: 50,
+      },
+      
+      {
+        name: "Shaders",
+        icon: "icons/shaders.jpeg",
+        level: 30,
+      },
+
+      {
+        name: "Python",
+        icon: "icons/python.jpeg",
+        level: 30,
       },
 
       {
@@ -60,6 +67,12 @@ export const config = {
         description: "Creating a Geometries and textures 3D with Three.Js",
         image: "projects/designs3d.jpeg",
         link: "https://designs-3d.netlify.app/animated-galaxy",
+      },
+      {
+        name: "Shaders GLSL",
+        description: "Elaborating Shaders GLSL",
+        image: "projects/shaders.jpeg",
+        link: "https://loquacious-kelpie-d9d9f6.netlify.app/",
       },
 
     ],

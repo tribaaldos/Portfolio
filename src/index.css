@@ -342,10 +342,12 @@ a {
   }
 
   .projects {
-    display: flex;
+    display: grid;
     justify-content: flex-start;
     overflow-x: auto;
     width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Modificar esta línea */
+
   }
 
   .project {
