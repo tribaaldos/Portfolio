@@ -8,8 +8,7 @@ import { useCursor, useGLTF } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 import React, { useEffect, useState } from "react";
 import * as THREE from "three";
-import { config } from "../../../../../Downloads/24-portfolio-final/src/config";
-
+import { config } from "../config";
 export function Mailbox(props) {
   const { nodes, materials } = useGLTF("/models/Mailbox v2.glb");
   const [mailboxHovered, setMailboxHovered] = useState(false);
