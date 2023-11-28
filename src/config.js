@@ -72,7 +72,7 @@ export const config = {
         name: "Shaders GLSL",
         description: "Elaborating Shaders GLSL",
         image: "projects/shaders.jpeg",
-        link: "https://loquacious-kelpie-d9d9f6.netlify.app/",
+        link: "https://glsl-shaders.netlify.app/",
       },
 
     ],
