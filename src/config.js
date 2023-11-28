@@ -60,7 +60,7 @@ export const config = {
         name: "World 3D",
         description: "Creating a Real World 3D with R3F",
         image: "projects/world3d.jpeg",
-        link: "https://aquamarine-palmier-8c46b7.netlify.app/",
+        link: "https://world3d.netlify.app/",
       },
       {
         name: "Designs 3D",
