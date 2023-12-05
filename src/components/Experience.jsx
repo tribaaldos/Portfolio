@@ -28,6 +28,7 @@ import { Pigeon } from "./Pigeon";
 import { SectionTitle } from "./SectionTitle";
 // import { Star } from "./Star";
 import { Ball } from './Ball.jsx';
+import PlaneTexture from "./Plane.jsx";
 
 const SECTIONS_DISTANCE = 10;
 
@@ -76,10 +77,11 @@ export const Experience = () => {
 
       {/* SHADOWS & FLOOR */}
       <ContactShadows opacity={0.5} scale={[30, 30]} color="#9c8e66" />
-      <mesh position-y={-0.001} rotation-x={-Math.PI / 2}>
+      {/* <mesh position-y={-0.001} rotation-x={-Math.PI / 2}>
         <planeGeometry args={[100, 100]} />
         <meshBasicMaterial color="#f5f3ee" />
-      </mesh>
+      </mesh> */}
+      <PlaneTexture />
 
       <motion.group ref={sceneContainer} animate={section}>
         {/* HOME */}

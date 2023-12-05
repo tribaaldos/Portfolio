@@ -1,4 +1,4 @@
-import { Scroll, ScrollControls } from "@react-three/drei";
+import { Scroll, ScrollControls, Sky } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import { MotionConfig } from "framer-motion";
 import { Suspense } from "react";
@@ -12,7 +12,8 @@ function App() {
   return (
     <>
       <LoadingScreen />
-      <Canvas camera={{ position: [0, 0.5, 5], fov: 42 }}>
+      <Canvas camera={{ position: [0, 2, 8], fov: 42 }}>
+        <Sky />
         {/* <color attach="background" args={["#f5f3ee"]} /> */}
         {/* <fog attach="fog" args={["#f5f3ee", 10, 50]} /> */}
         <color attach="background" args={["black"]} />

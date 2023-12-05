@@ -74,6 +74,12 @@ export const config = {
         image: "projects/shaders.jpeg",
         link: "https://glsl-shaders.netlify.app/",
       },
+      {
+        name: "My Room 3D",
+        description: "LUNA AI, blender and Three.js",
+        image: "projects/room.jpg",
+        link: "https://my-room-3d.netlify.app/",
+      },
 
     ],
     contact: {
