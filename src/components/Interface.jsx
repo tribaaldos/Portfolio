@@ -35,12 +35,12 @@ export const Interface = () => {
               }}
               animate={{
                 translateY: 4,
-              }}
+              }} 
               transition={{
                 duration: 0.4,
                 repeatDelay: 0.5,
                 repeatType: "reverse",
-                repeat: Infinity,
+                repeat: Infinity,/*  */
               }}
             ></motion.div>
           </motion.div>

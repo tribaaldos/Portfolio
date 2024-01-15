@@ -223,7 +223,7 @@ a {
   top: 0;
   left: 4rem;
   right: 4rem;
-  background: black;
+  background: transparent;
   backdrop-filter: blur(8px);
   
 }
@@ -242,7 +242,7 @@ a {
 
 .menu__button {
   font-weight: bold;
-  color: white;
+  color: black;
 }
 
 .menu__button:hover {
@@ -351,7 +351,7 @@ a {
   }
 
   .project {
-    min-width: 220px;
+    min-width: 220;
   }
 
   .contact {

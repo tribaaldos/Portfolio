@@ -15,9 +15,9 @@ export const Menu = () => {
         <a className="menu__button" href="#contact">
           Contact
         </a>
-        <a className="menu__button" href="https://docs.google.com/document/d/1oLnyRznAA6aT5bjnZtNBFYMbaIbmo3U50mzJg-54Xz8/edit" target="_blank">
+        {/* <a className="menu__button" href="https://docs.google.com/document/d/1oLnyRznAA6aT5bjnZtNBFYMbaIbmo3U50mzJg-54Xz8/edit" target="_blank">
           Resume
-        </a>
+        </a> */}
       </div>
     </div>
   );

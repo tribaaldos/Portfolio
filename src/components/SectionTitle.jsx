@@ -8,7 +8,7 @@ export const SectionTitle = ({ children, ...props }) => {
       {...props}
     >
       {children}
-      <meshStandardMaterial color="grey" />
+      <meshStandardMaterial color="gray" />
     </Text3D>
   );
 };

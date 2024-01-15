@@ -34,7 +34,7 @@ export default function PlaneTexture() {
          displacementScale={0.1}
         /> */}
         <MeshReflectorMaterial
-          color="#171720"
+          color="white"
           resolution={1024}
           roughness={0.6}
           mixStrength={3}

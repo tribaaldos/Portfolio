@@ -5,6 +5,7 @@ import {
   Float,
   MeshDistortMaterial,
   RoundedBox,
+  Sky,
   useScroll,
 } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
@@ -15,20 +16,15 @@ import { config } from "../config.js";
 import useMobile from "../hooks/useMobile";
 import { Avatar } from "./Avatar";
 import { Balloon } from "./Balloon";
-import { BookCase } from "./BookCase";
-import { CouchSmall } from "./CouchSmall";
-import { Lamp } from "./Lamp";
 import { MacBookPro } from "./MacBookPro";
 import { Mailbox } from "./Mailbox";
 import { Monitor } from "./Monitor";
 import { MonitorScreen } from "./MonitorScreen";
-// import { PalmTree } from "./PalmTree";
-import { ParkBench } from "./ParkBench";
-import { Pigeon } from "./Pigeon";
 import { SectionTitle } from "./SectionTitle";
 // import { Star } from "./Star";
-import { Ball } from './Ball.jsx';
+import { Ball } from "./Ball.jsx";
 import PlaneTexture from "./Plane.jsx";
+import { Sandrio } from "./Sandrio.jsx";
 
 const SECTIONS_DISTANCE = 10;
 
@@ -52,6 +48,7 @@ export const Experience = () => {
       config.sections[Math.round(scrollData.offset * (scrollData.pages - 1))]
     );
   });
+
   useEffect(() => {
     const handleHashChange = () => {
       const sectionIndex = config.sections.indexOf(
@@ -72,11 +69,14 @@ export const Experience = () => {
 
   return (
     <>
+      <Sky />
+      
       <Environment preset="sunset" />
       <Avatar position-z={isMobile ? -5 : 0} />
+      <Sandrio scale={0.5} position-x={-0.5} position-z={-2}/>
 
       {/* SHADOWS & FLOOR */}
-      <ContactShadows opacity={0.5} scale={[30, 30]} color="#9c8e66" />
+      <ContactShadows opacity={0.9} scale={[30, 30]} color="#9c8e66" />
       {/* <mesh position-y={-0.001} rotation-x={-Math.PI / 2}>
         <planeGeometry args={[100, 100]} />
         <meshBasicMaterial color="#f5f3ee" />
@@ -109,20 +109,23 @@ export const Experience = () => {
             position={isMobile ? [1, 0, -4] : [scaleFactor * 4, 0, -5]}
           /> */}
           <group scale={isMobile ? 0.3 : 1}>
-            <Float floatIntensity={0.6}>
+            {/* <Float floatIntensity={0.6}> */}
               <Center disableY disableZ>
                 <SectionTitle
                   className="title-section"
-                  size={0.8}
-                  position-y={1.6}
-                  position-z={-3}
+                  size={2}
+                  position-y={0.7}
+                  position-z={-6}
+                  position-x={-3}
                   bevelEnabled
                   bevelThickness={0.3}
+                  rotation-y={Math.PI / 10}
+
                 >
                   {config.home.title}
                 </SectionTitle>
               </Center>
-            </Float>
+            {/* </Float> */}
             <Center disableY disableZ>
               <SectionTitle
                 size={1.2}
@@ -152,19 +155,8 @@ export const Experience = () => {
             <SectionTitle position-z={1.5} rotation-y={Math.PI / 6}>
               SKILLS
             </SectionTitle>
-            <BookCase position-z={-2} />
-            <CouchSmall
-              scale={0.4}
-              position-z={0}
-              position-x={-0.2}
-              rotation-y={Math.PI / 3}
-            />
-            <Lamp
-              position-z={0.6}
-              position-x={-0.4}
-              position-y={-0.8}
-              rotation-y={-Math.PI}
-            />
+ 
+
           </group>
           <mesh position-y={2} position-z={-4} position-x={1}>
             {/* <sphereGeometry args={[1, 64, 64]} />
@@ -176,7 +168,7 @@ export const Experience = () => {
               color="yellow"
             /> */}
 
-            <Ball scale={0.4}/>
+            <Ball scale={0.4} />
           </mesh>
         </motion.group>
         {/* PROJECTS */}
@@ -240,25 +232,20 @@ export const Experience = () => {
             CONTACT
           </SectionTitle>
           <group position-x={-2 * scaleFactor}>
-            <ParkBench
-              scale={0.5}
-              position-x={-0.5}
-              position-z={-2.5}
-              rotation-y={-Math.PI / 4}
-            />
-            <group position-y={2.2} position-z={-0.5}>
-              <Float floatIntensity={2} rotationIntensity={1.5}>
-                <Balloon scale={1.5} position-x={-0.5} color="#71a2d9" />
+
+            <group position-y={2.2} position-z={-5.5}>
+              <Float floatIntensity={4} rotationIntensity={1.5}>
+                <Balloon scale={0.5} position-x={-0.5} color="#71a2d9" />
               </Float>
               <Float
                 floatIntensity={1.5}
                 rotationIntensity={2}
                 position-z={0.5}
               >
-                <Balloon scale={1.3} color="#d97183" />
+                <Balloon scale={0.5} color="#d97183" />
               </Float>
               <Float speed={2} rotationIntensity={2}>
-                <Balloon scale={1.6} position-x={0.4} color="yellow" />
+                <Balloon scale={0.5} position-x={0.4} color="yellow" />
               </Float>
             </group>
           </group>
@@ -270,14 +257,7 @@ export const Experience = () => {
             position-y={0.25}
             position-z={0.5}
           />
-          <Float floatIntensity={1.5} speed={3}>
-            <Pigeon
-              position-x={isMobile ? 0 : 2 * scaleFactor}
-              position-y={isMobile ? 2.2 : 1.5}
-              position-z={-0.5}
-              scale={0.3}
-            />
-          </Float>
+   
         </motion.group>
       </motion.group>
     </>
