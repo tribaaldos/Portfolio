@@ -73,7 +73,7 @@ export const Experience = () => {
       
       <Environment preset="sunset" />
       <Avatar position-z={isMobile ? -5 : 0} />
-      <Sandrio scale={0.5} position-x={-0.5} position-z={-2}/>
+      {/* <Sandrio scale={0.5} position-x={-0.5} position-z={-2}/> */}
 
       {/* SHADOWS & FLOOR */}
       <ContactShadows opacity={0.9} scale={[30, 30]} color="#9c8e66" />

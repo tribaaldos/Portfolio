@@ -310,6 +310,7 @@ a {
 /* RESPONSIVE */
 
 @media (max-width: 990px) {
+
   .mobile--section--top {
     align-items: flex-start;
   }
@@ -336,7 +337,7 @@ a {
   }
 
   .skill {
-    padding: 0.5rem;
+    padding: .1rem;
     min-width: 220px;
     margin: 0;
   }
@@ -346,7 +347,7 @@ a {
     justify-content: flex-start;
     overflow-x: auto;
     width: 100%;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Modificar esta línea */
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Modificar esta línea */
 
   }
 
