@@ -7,7 +7,7 @@ import { Interface } from "./components/Interface";
 import { LoadingScreen } from "./components/LoadingScreen";
 import { Menu } from "./components/Menu";
 import { config } from "./config";
-
+//
 function App() {
   return (
     <>
